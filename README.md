@@ -16,9 +16,9 @@ To write a python program to perform sliding window protocol
 
 6. Stop the program
 
-PROGRAM:
+## PROGRAM:
 
-CLIENT:
+## CLIENT:
 ```
 import socket
 s=socket.socket()
@@ -39,7 +39,7 @@ while True:
             print(ack)
             i+=s
  ```
-SERVER:
+## SERVER:
 ```
 import socket
 s=socket.socket()
@@ -48,3 +48,14 @@ while True:
  print(s.recv(1024).decode())
  s.send("acknowledgement recived from the server".encode())
  ```
+ ## OUTPUT:
+## CLIENT SIDE:
+
+![image](https://github.com/Bhuvaneshwari-2003/EX-3/assets/94828604/23c9a9a8-80a6-4186-aeec-23f84312b4d1)
+
+## SERVER SIDE:
+
+![image](https://github.com/Bhuvaneshwari-2003/EX-3/assets/94828604/d3fe28c4-a8bb-447a-8fd9-a844fe9e1621)
+
+## RESULT:
+Thus, python program to perform stop and wait protocol was successfully executed.
